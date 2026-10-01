@@ -1,0 +1,58 @@
+* {
+    margin: 0;             
+    padding: 0;            
+    box-sizing: border-box; 
+}
+
+.navbar {
+    display: flex;                  
+    justify-content: space-between; 
+    align-items: center;            
+    background-color: #1e3a8a;       
+    padding: 15px 40px;             
+    color: white;                   
+}
+
+.logo {
+    font-size: 1.5rem;              
+    font-weight: bold;              
+}
+
+.nav-links {
+    display: flex;                  
+    gap: 20px;
+    align-items: center;                      
+}
+
+.nav-links a {
+    color: #cbd5e1;                 
+    text-decoration: none;          
+    font-weight: 500;               
+    transition: color 0.3s;         
+}
+
+
+.nav-links a:hover, .nav-links a.active {
+    color: white;                   
+}
+
+.container {
+    flex: 1;                        /* Faz o conteúdo principal esticar e ocupar todo o espaço restante, empurrando o rodapé para o fim */
+    padding: 40px;                  /* Adiciona 40px de preenchimento interno em todas as bordas */
+    max-width: 2000px;              /* Limita a largura máxima da área de conteúdo em telas grandes */
+    width: 100%;                    /* Garante que o contêiner ocupe 100% da largura disponível até o limite do max-width */
+    margin: 0 auto;                 /* Centraliza a estrutura da página horizontalmente na tela */
+}
+
+.subtitle {
+    color: #64748b;                 /* Cor de texto em tom cinza azulado suave */
+    margin-bottom: 30px;            /* Adiciona um espaçamento de 30px abaixo do subtítulo */
+}
+
+.welcome-card {
+    background-color: white;                   /* Fundo branco para destacar do fundo da página */
+    padding: 30px;                             /* Espaçamento interno de 30px */
+    border-radius: 8px;                        /* Arredonda os quatro cantos do cartão em 8px */
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);/* Cria uma sombra suave abaixo do cartão dando a sensação de elevação */
+    margin-bottom: 30px;                       /* Espaçamento de 30px na parte inferior para afastar do grid */
+}
